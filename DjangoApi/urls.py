@@ -17,6 +17,9 @@ urlpatterns = [
     # GenericAPIView and Model Mixin
      path('studentList/', StudentList.as_view()),
      path('studentCreate/', StudentCreate.as_view()),
+     path('studentRetrieve/<int:pk>', StudentRetrieve.as_view()),
+     path('studentUpdate/<int:pk>', StudentUpdate.as_view()),
+
 
 
 
